@@ -27,6 +27,8 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.HashMap;
 
+
+//Sign UP Activity
 public class SignUpActivity extends AppCompatActivity {
     private ActivitySignUpBinding binding;
     private PreferneceManager preferneceManager;

@@ -17,6 +17,8 @@ import com.sample.myapplication.utilities.PreferneceManager;
 
 import java.util.HashMap;
 
+
+// Sign In activity
 public class SignInActivity extends AppCompatActivity {
 
     private ActivitySignInBinding binding;
@@ -26,6 +28,8 @@ public class SignInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         preferneceManager= new PreferneceManager(getApplicationContext());
+
+        // if login then dont show signin
         if(preferneceManager.getBoolean(Constants.KEY_IS_SIGN_IN))
         {
             Intent intent = new Intent(getApplicationContext(),MainActivity.class);

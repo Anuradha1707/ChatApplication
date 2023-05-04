@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 
 public class PreferneceManager {
 
+    // Sharedpreference is to store data in local storage
     private final SharedPreferences sharedPreferences;
     public PreferneceManager(Context context){
         sharedPreferences= context.getSharedPreferences(Constants.KEY_PREFERENCE_NAME, Context.MODE_PRIVATE);
